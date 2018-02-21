@@ -31,3 +31,17 @@ void RegisterQueue::enqueue(Customer &a){
   }
   temp->cust = *a;
 }
+
+void RegisterQueue::dequeue(){
+  if(front==rear){
+    free(front);
+    front = NULL;
+    rear = NULL;
+  }
+  else if(front!=NULL){
+    Node *temp;
+    temp = front;
+    front = front->next;
+    free(temp);
+  }
+}
