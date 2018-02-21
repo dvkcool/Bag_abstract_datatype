@@ -17,10 +17,10 @@ private:
    Node *front;
    Node *rear;
    void calculateStats();          //Private method to calculate stats
-   static double clockt;           //Class variable clock time
+   double clocktime;           //Class variable clock time
    vector <double> waittime;       //waiting time by each customer
    int maxlength;                  //max length of Customers
-   int len;                        // Lane length at any time 
+   int len;                        // Lane length at any time
 
 public:
   RegisterQueue();             // Constructor

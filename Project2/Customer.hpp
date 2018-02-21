@@ -1,3 +1,5 @@
+#ifndef _CUSTOMER_
+#define _CUSTOMER_
 class Customer{
   public:
     int time;    //Time of entering to Lane
@@ -7,4 +9,5 @@ class Customer{
       time = t;
       items = i;
     }
-}
+};
+#endif
