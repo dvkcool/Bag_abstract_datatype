@@ -3,7 +3,7 @@ using namespace std;
 #ifndef _REG_QUE
 #define _REG_QUE
 #include "Customer.hpp"
-
+#include <vector>
 // Nodde for Queue
 struct node{
   Customer cust;
@@ -16,13 +16,16 @@ class RegisterQueue {
 private:
    Node *front;
    Node *rear;
-   void calculateStats();  //Private method to calculate stats
+   void calculateStats();          //Private method to calculate stats
+   static double clockt;           //Class variable clock time
+   vector <double> waittime;       //waiting time by each customer
+   int maxlength;                  //max length of Customers
+   int len;                        // Lane length at any time 
 
 public:
   RegisterQueue();             // Constructor
   ~RegisterQueue();            // Destructor
-  static double clock;         //Class variable clock
-  void enqueue(Customer &a);   //enqueue operation
+  void enqueue(Customer a);   //enqueue operation
   void dequeue();              //dequeue operation
   void print();                // Public print method
   bool isEmpty();              // isEmpty method to check if queue is empty
