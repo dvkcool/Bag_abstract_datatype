@@ -45,3 +45,15 @@ void RegisterQueue::dequeue(){
     free(temp);
   }
 }
+
+void RegisterQueue::calculateStats(){
+
+}
+
+void RegisterQueue::print(){
+
+}
+
+bool RegisterQueue::isEmpty(){
+  return (front==NULL);
+}
