@@ -4,9 +4,18 @@ using namespace std;
 #define _REG_QUE
 #include "Customer.hpp"
 
+// Nodde for Queue
+struct node{
+  Customer cust;
+  struct node* next; //Pointer to next node
+};
+typedef struct node Node;
+
 class RegisterQueue {
 
 private:
+   Node *front;
+   Node *rear;
    void calculateStats();  //Private method to calculate stats
 
 public:

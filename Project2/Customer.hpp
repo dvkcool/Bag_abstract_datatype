@@ -7,5 +7,4 @@ class Customer{
       time = t;
       items = i;
     }
-
 }
