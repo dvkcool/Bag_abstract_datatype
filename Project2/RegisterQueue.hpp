@@ -1,3 +1,4 @@
+#pragma once
 #include <iostream>
 using namespace std;
 #ifndef _REG_QUE

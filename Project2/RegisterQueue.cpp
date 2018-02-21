@@ -1,3 +1,4 @@
+#pragma once
 #include "RegisterQueue.hpp"
 #include<stdlib.h>
 #include<malloc.h>

@@ -1,3 +1,5 @@
+#pragma once
+//I prefer to use the guard too, better than pragma, sometimes :)
 #ifndef _CUSTOMER_
 #define _CUSTOMER_
 class Customer{
